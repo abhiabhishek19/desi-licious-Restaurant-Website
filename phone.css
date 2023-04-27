@@ -1,0 +1,111 @@
+#navbar1{
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+#resname{
+    font-size: 2.0rem;
+    /* height: 1.0rem; */
+}
+#tagline{
+    font-size: 1.3rem;
+    /* height: 0.5rem; */
+}
+.design{
+    height: 3.0rem;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+
+}
+
+
+
+.webnav ul li a{
+    font-size: 0.5rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+
+.cuisines #cuisinetypes{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#plate img, #plate .frontimg{
+    margin: 50px 50px;
+    height: 304px;
+    width: 340px;
+    padding: 30px;
+}
+#plate #backimg{
+    height: 257px;
+    width: 220px;
+}
+
+#plate .frontimg{
+    animation: rot 25s infinite linear;
+    
+    background-repeat: no-repeat;
+    animation-timing-function: ease-out;
+    height: 350px;
+    width: 350px;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+        background-image: url(chola.png);
+        background-size: 13rem;
+        background-position: center;
+    }
+    25%{
+        transform: rotate(90deg);
+        background-image: url(pngegg\ \(1\).png);
+        background-size: 13rem;
+        background-position: center;
+    }
+    50%{
+        transform: rotate(180deg);
+        background-image: url(pngegg\ \(2\).png);
+        background-size: 13rem;
+        background-position: center;
+    }
+    75%{
+        transform: rotate(270deg);
+        background-image: url(matarpaneer.png);
+        background-size: 13rem;
+        background-position: center;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+        background-image: url(curry\ rice.png);
+        background-size: 13rem;
+        background-position: center;
+    }
+}
+
+
+#AboutUs{
+    flex-direction: column;
+}
+
+#delivery .deliveryguy{
+    background-image: url(delivery.png);
+    height: 400px;
+    width: 400px;
+    background-size: 375px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    animation: dguy 3s infinite linear ;
+    
+}
+@keyframes dguy{
+    0%{
+        transform: translatex(-10vw);
+    }
+    100%{
+        transform: translatex(60vw);
+        /* margin-right: 30%; */
+    }
+}
